@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:member",
+ "creation": "2025-07-10 18:09:39.961821",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_nmci",
+  "member",
+  "book",
+  "issue_date",
+  "return_date",
+  "status",
+  "rent_fee",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_nmci",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Member",
+   "unique": 1
+  },
+  {
+   "fieldname": "book",
+   "fieldtype": "Link",
+   "label": "Book",
+   "options": "Book"
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "return_date",
+   "fieldtype": "Date",
+   "label": "Return Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nIssued\nReturned"
+  },
+  {
+   "fieldname": "rent_fee",
+   "fieldtype": "Currency",
+   "label": "Rent Fee"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Transaction",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-10 18:15:23.720712",
+ "modified_by": "prachi123@gmail.com",
+ "module": "Library Management",
+ "name": "Transaction",
+ "naming_rule": "By fieldname",
+ "owner": "prachi123@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
