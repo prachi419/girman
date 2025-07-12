@@ -3,11 +3,9 @@
 A Frappe-based application to manage books, members, and transactions in a library.
 
 ---
-
 ##  Features
 
 ###  Core Functionalities
-
 - Maintain **Books** with stock.
 - Manage **Members** with outstanding debt tracking.
 - Perform CRUD operations on **Books** and **Members**.
