@@ -1,9 +1,7 @@
 #  Library Management
 
 A Frappe-based application to manage books, members, and transactions in a library.
-
 ---
-
 ##  Features
 
 ###  Core Functionalities
