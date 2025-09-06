@@ -135,19 +135,25 @@ doctype_list_js = {
 # override_doctype_class = {
 # 	"ToDo": "custom_app.overrides.CustomToDo"
 # }
+# override_doctype_class = {
+#     "Payroll Entry": "library_management.overrides.payroll_entry.PayrollEntry"
+# }
 
 # Document Events
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Employee": {
+		"validate": "library_management.library_management.doc_events.employee.validate",
+		
+	},
+    "Payroll Entry": {
+		"validate": "library_management.library_management.doc_events.payroll_entry.validate",
+		
+	},
 
+}
 # Scheduled Tasks
 # ---------------
 
